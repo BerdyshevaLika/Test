@@ -1,0 +1,89 @@
+.pretension-slider {
+    position: relative;
+    min-width: 0;
+}
+
+.pretension-slider .slick-list {
+    overflow: hidden;
+}
+
+.pretension-slider .slick-track {
+    display: flex;
+}
+
+.pretension-slider__image img {
+    border-radius: 14px;
+}
+
+.pretension-slider__counter {
+    position: absolute;
+    bottom: -30px;
+    right: 0;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 16px;
+    color: $color-bokara-grey;
+
+    @media (min-width: $vp-768) {
+        bottom: -50px;
+        font-size: 18px;
+        line-height: 31px;
+    }
+
+    @media (min-width: $vp-1440) {
+        bottom: 10px;
+    }
+}
+
+.pretension-slider .slick-arrow {
+    position: absolute;
+    left: 0;
+    bottom: -48px;
+    font-size: 0;
+    padding: 0;
+    background-color: $color-maire;
+    background-image: url("../../img/pretension/arrow-icon.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 36px;
+    height: 36px;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+
+    @media (min-width: $vp-768) {
+        bottom: -60px;
+        width: 44px;
+        height: 44px;
+    }
+
+    @media (min-width: $vp-1440) {
+        bottom: 0;
+    }
+
+    &:hover,
+    &:focus {
+        background-color: $color-outrageous-orange;
+    }
+
+    &:active {
+        opacity: 0.8;
+    }
+
+    &:disabled {
+        background-color: $color-whisper;
+    }
+}
+
+.pretension-slider .slick-arrow.slick-disabled {
+    background-color: $color-whisper;
+}
+
+.pretension-slider .slick-arrow.slick-next {
+    transform: rotate(-180deg);
+    left: 46px;
+
+    @media (min-width: $vp-768) {
+        left: 54px;
+    }
+}

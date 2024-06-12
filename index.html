@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Тестовое задание</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+    <header class="header" data-header>
+        <div class="header__wrapper container">
+            <nav class="header__nav">
+                <ul class="header__nav-list">
+                    <li class="header__nav-item">
+                        <a class="header__nav-link header__nav-link--current" href="#">Главная</a>
+                    </li>
+                    <li class="header__nav-item">
+                        <a class="header__nav-link" href="#">Коттеджи</a>
+                    </li>
+                </ul>
+            </nav>
+            <button class="header__toggle" type="button" data-toggle>
+                <span class="visually-hidden">Открыть/закрыть меню навигации.</span>
+                <span class="header__toggle-icon"></span>
+            </button>
+        </div>
+    </header>
+    <main class="main-index">
+        <h1 class="visually-hidden">Продажа коттеджей от застройщика ООО 1D.</h1>
+        <section class="catalog">
+            <div class="catalog__wrapper container">
+                <h2 class="visually-hidden">Каталог коттеджей.</h2>
+                <p class="catalog__text catalog__text--mobile">25 минут до метро Заельцовская</p>
+                <p class="catalog__text catalog__text--desktop">Коттеджи от 21 369 ₽/мес.</p>
+                <ul class="catalog__list">
+                    <li class="catalog__item">
+                        <div class="catalog__item-slider catalog-slider">
+                            <a class="catalog__link" href="#">
+                                <span class="catalog-slider__mark">Дом готов</span>
+                                <div class="catalog-slider__content catalog-slider__content--active" data-catalog-slide>
+                                    <picture>
+                                        <source type="image/jpg" media="(min-width: 1440px)"
+                                            srcset="img/catalog/cottage-photo-desktop.jpg 1x, img/catalog/cottage-photo-desktop@2x.jpg 2x"
+                                            width="592" height="300">
+                                        <source type="image/jpg" media="(min-width: 768px)"
+                                            srcset="img/catalog/cottage-photo-tablet.jpg 1x, img/catalog/cottage-photo-tablet@2x.jpg 2x"
+                                            width="350" height="270">
+                                        <img class="catalog__image" src="img/catalog/cottage-photo-mobile.jpg"
+                                            srcset="img/catalog/cottage-photo-mobile@2x.jpg 2x" width="296" height="240"
+                                            alt="Фото коттеджа.">
+                                    </picture>
+                                </div>
+                                <div class="catalog-slider__content" data-catalog-slide>
+                                    <picture>
+                                        <source type="image/jpg" media="(min-width: 1440px)"
+                                            srcset="img/catalog/cottage-photo-desktop.jpg 1x, img/catalog/cottage-photo-desktop@2x.jpg 2x"
+                                            width="592" height="300">
+                                        <source type="image/jpg" media="(min-width: 768px)"
+                                            srcset="img/catalog/cottage-photo-tablet.jpg 1x, img/catalog/cottage-photo-tablet@2x.jpg 2x"
+                                            width="350" height="270">
+                                        <img class="catalog__image" src="img/catalog/cottage-photo-mobile.jpg"
+                                            srcset="img/catalog/cottage-photo-mobile@2x.jpg 2x" width="296" height="240"
+                                            alt="Фото коттеджа.">
+                                    </picture>
+                                </div>
+                                <div class="catalog-slider__content" data-catalog-slide>
+                                    <picture>
+                                        <source type="image/jpg" media="(min-width: 1440px)"
+                                            srcset="img/catalog/cottage-photo-desktop.jpg 1x, img/catalog/cottage-photo-desktop@2x.jpg 2x"
+                                            width="592" height="300">
+                                        <source type="image/jpg" media="(min-width: 768px)"
+                                            srcset="img/catalog/cottage-photo-tablet.jpg 1x, img/catalog/cottage-photo-tablet@2x.jpg 2x"
+                                            width="350" height="270">
+                                        <img class="catalog__image" src="img/catalog/cottage-photo-mobile.jpg"
+                                            srcset="img/catalog/cottage-photo-mobile@2x.jpg 2x" width="296" height="240"
+                                            alt="Фото коттеджа.">
+                                    </picture>
+                                </div>
+                            </a>
+                            <div class="catalog-slider__pagination">
+                                <button
+                                    class="catalog-slider__pagination-button catalog-slider__pagination-button--current"
+                                    type="button" data-button-pagination>
+                                    <span class="visually-hidden">Первый слайд.</span>
+                                </button>
+                                <button class="catalog-slider__pagination-button" type="button" data-button-pagination>
+                                    <span class="visually-hidden">Второй слайд.</span>
+                                </button>
+                                <button class="catalog-slider__pagination-button" type="button" data-button-pagination>
+                                    <span class="visually-hidden">Третий слайд.</span>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="catalog__description catalog__description--mobile">
+                            <h3 class="catalog__title">Коттедж 87 м<sup>2</sup></h3>
+                            <p class="catalog__price">от 3 730 000 руб.</p>
+                            <ul class="catalog__advantages-list">
+                                <li class="catalog__advantages-item">2 спальни</li>
+                                <li class="catalog__advantages-item">терраса</li>
+                                <li class="catalog__advantages-item">Строим за 2 месяца</li>
+                                <li class="catalog__advantages-item">Ипотека 3%</li>
+                            </ul>
+                        </div>
+                        <div class="catalog__description catalog__description--desktop">
+                            <h3 class="catalog__title">Коттедж 87 м<sup>2</sup></h3>
+                            <p class="catalog__price">5 200 000 руб.</p>
+                            <ul class="catalog__advantages-list">
+                                <li class="catalog__advantages-item">Дом готов</li>
+                                <li class="catalog__advantages-item">Электрика</li>
+                                <li class="catalog__advantages-item">Вода</li>
+                                <li class="catalog__advantages-item">Газ</li>
+                                <li class="catalog__advantages-item">Участок 8 соток</li>
+                                <li class="catalog__advantages-item">Асфальт до участка</li>
+                                <li class="catalog__advantages-item">Ипотека от 3%</li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="catalog__item">
+                        <a class="catalog__link" href="#">
+                            <picture>
+                                <source type="image/jpg" media="(min-width: 1440px)"
+                                    srcset="img/catalog/cottage-photo-desktop.jpg 1x, img/catalog/cottage-photo-desktop@2x.jpg 2x"
+                                    width="592" height="300">
+                                <source type="image/jpg" media="(min-width: 768px)"
+                                    srcset="img/catalog/cottage-photo-tablet.jpg 1x, img/catalog/cottage-photo-tablet@2x.jpg 2x"
+                                    width="350" height="270">
+                                <img class="catalog__image" src="img/catalog/cottage-photo-mobile.jpg"
+                                    srcset="img/catalog/cottage-photo-mobile@2x.jpg 2x" width="296" height="240"
+                                    alt="Фото коттеджа.">
+                            </picture>
+                            <div class="catalog__description catalog__description--mobile">
+                                <h3 class="catalog__title">Коттедж 87 м<sup>2</sup></h3>
+                                <p class="catalog__price">от 3 730 000 руб.</p>
+                                <ul class="catalog__advantages-list">
+                                    <li class="catalog__advantages-item">2 спальни</li>
+                                    <li class="catalog__advantages-item">терраса</li>
+                                    <li class="catalog__advantages-item">Строим за 2 месяца</li>
+                                    <li class="catalog__advantages-item">Ипотека 3%</li>
+                                </ul>
+                            </div>
+                            <div class="catalog__description catalog__description--desktop">
+                                <h3 class="catalog__title">Коттедж 87 м<sup>2</sup></h3>
+                                <p class="catalog__price">5 200 000 руб.</p>
+                                <ul class="catalog__advantages-list">
+                                    <li class="catalog__advantages-item">Дом готов</li>
+                                    <li class="catalog__advantages-item">Электрика</li>
+                                    <li class="catalog__advantages-item">Вода</li>
+                                    <li class="catalog__advantages-item">Газ</li>
+                                    <li class="catalog__advantages-item">Участок 8 соток</li>
+                                    <li class="catalog__advantages-item">Асфальт до участка</li>
+                                    <li class="catalog__advantages-item">Ипотека от 3%</li>
+                                </ul>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="catalog__item">
+                        <a class="catalog__link" href="#">
+                            <picture>
+                                <source type="image/jpg" media="(min-width: 1440px)"
+                                    srcset="img/catalog/cottage-photo-desktop.jpg 1x, img/catalog/cottage-photo-desktop@2x.jpg 2x"
+                                    width="592" height="300">
+                                <source type="image/jpg" media="(min-width: 768px)"
+                                    srcset="img/catalog/cottage-photo-tablet.jpg 1x, img/catalog/cottage-photo-tablet@2x.jpg 2x"
+                                    width="350" height="270">
+                                <img class="catalog__image" src="img/catalog/cottage-photo-mobile.jpg"
+                                    srcset="img/catalog/cottage-photo-mobile@2x.jpg 2x" width="296" height="240"
+                                    alt="Фото коттеджа.">
+                            </picture>
+                            <div class="catalog__description catalog__description--mobile">
+                                <h3 class="catalog__title">Коттедж 87 м<sup>2</sup></h3>
+                                <p class="catalog__price">от 3 730 000 руб.</p>
+                                <ul class="catalog__advantages-list">
+                                    <li class="catalog__advantages-item">2 спальни</li>
+                                    <li class="catalog__advantages-item">терраса</li>
+                                    <li class="catalog__advantages-item">Строим за 2 месяца</li>
+                                    <li class="catalog__advantages-item">Ипотека 3%</li>
+                                </ul>
+                            </div>
+                            <div class="catalog__description catalog__description--desktop">
+                                <h3 class="catalog__title">Коттедж 87 м<sup>2</sup></h3>
+                                <p class="catalog__price">5 200 000 руб.</p>
+                                <ul class="catalog__advantages-list">
+                                    <li class="catalog__advantages-item">Дом готов</li>
+                                    <li class="catalog__advantages-item">Электрика</li>
+                                    <li class="catalog__advantages-item">Вода</li>
+                                    <li class="catalog__advantages-item">Газ</li>
+                                    <li class="catalog__advantages-item">Участок 8 соток</li>
+                                    <li class="catalog__advantages-item">Асфальт до участка</li>
+                                    <li class="catalog__advantages-item">Ипотека от 3%</li>
+                                </ul>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="catalog__item">
+                        <a class="catalog__link" href="#">
+                            <picture>
+                                <source type="image/jpg" media="(min-width: 1440px)"
+                                    srcset="img/catalog/cottage-photo-desktop.jpg 1x, img/catalog/cottage-photo-desktop@2x.jpg 2x"
+                                    width="592" height="300">
+                                <source type="image/jpg" media="(min-width: 768px)"
+                                    srcset="img/catalog/cottage-photo-tablet.jpg 1x, img/catalog/cottage-photo-tablet@2x.jpg 2x"
+                                    width="350" height="270">
+                                <img class="catalog__image" src="img/catalog/cottage-photo-mobile.jpg"
+                                    srcset="img/catalog/cottage-photo-mobile@2x.jpg 2x" width="296" height="240"
+                                    alt="Фото коттеджа.">
+                            </picture>
+                            <div class="catalog__description catalog__description--mobile">
+                                <h3 class="catalog__title">Коттедж 87 м<sup>2</sup></h3>
+                                <p class="catalog__price">от 3 730 000 руб.</p>
+                                <ul class="catalog__advantages-list">
+                                    <li class="catalog__advantages-item">2 спальни</li>
+                                    <li class="catalog__advantages-item">терраса</li>
+                                    <li class="catalog__advantages-item">Строим за 2 месяца</li>
+                                    <li class="catalog__advantages-item">Ипотека 3%</li>
+                                </ul>
+                            </div>
+                            <div class="catalog__description catalog__description--desktop">
+                                <h3 class="catalog__title">Коттедж 87 м<sup>2</sup></h3>
+                                <p class="catalog__price">5 200 000 руб.</p>
+                                <ul class="catalog__advantages-list">
+                                    <li class="catalog__advantages-item">Дом готов</li>
+                                    <li class="catalog__advantages-item">Электрика</li>
+                                    <li class="catalog__advantages-item">Вода</li>
+                                    <li class="catalog__advantages-item">Газ</li>
+                                    <li class="catalog__advantages-item">Участок 8 соток</li>
+                                    <li class="catalog__advantages-item">Асфальт до участка</li>
+                                    <li class="catalog__advantages-item">Ипотека от 3%</li>
+                                </ul>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+                <a class="catalog__link-map" href="#">Выбрать на карте</a>
+            </div>
+        </section>
+        <section class="pretension">
+            <div class="pretension__wrapper container">
+                <h2 class="pretension__title">Коттеджи для отдыха круглый год</h2>
+                <div class="pretension__content-wrapper">
+                    <div class="pretension__text-wrapper">
+                        <p class="pretension__text">Застройщик ООО 1D специализируется на возведении комфортных
+                            загородных
+                            домов. Архитекторы и дизайнеры
+                            отслеживают мировые тренды строительства и умело адаптируют их в Сибири.</p>
+                        <p class="pretension__text">Панорамное остекление домов с погружением жителей в окружающий
+                            природный
+                            ландшафт, правильное соотношение жилых и хозяйственных зон и надёжные материалы
+                            строительства,
+                            качество которых не изменяется после холодов — отличительные черты коттеджей от девелопера.
+                        </p>
+                    </div>
+                    <a class="pretension__link" href="#">
+                        <span class="pretension__link-text pretension__link-text--mobile">Получить презентацию</span>
+                        <span class="pretension__link-text pretension__link-text--desktop">Получить презентацию
+                            на WhatsApp</span>
+                    </a>
+                    <div class="pretension__slider pretension-slider">
+                        <div class="pretension-slider__image">
+                            <picture>
+                                <source type="image/jpg" media="(min-width: 1440px)"
+                                    srcset="img/pretension/pretension-desktop.jpg 1x, img/pretension/pretension-desktop@2x.jpg 2x"
+                                    width="570" height="360">
+                                <source type="image/jpg" media="(min-width: 768px)"
+                                    srcset="img/pretension/pretension-tablet.jpg 1x, img/pretension/pretension-tablet@2x.jpg 2x"
+                                    width="716" height="400">
+                                <img src="img/pretension/pretension-mobile.jpg"
+                                    srcset="img/pretension/pretension-mobile@2x.jpg 2x" width="296" height="180"
+                                    alt="Фото коттеджа.">
+                            </picture>
+                        </div>
+                        <div class="pretension-slider__image">
+                            <picture>
+                                <source type="image/jpg" media="(min-width: 1440px)"
+                                    srcset="img/pretension/pretension-desktop.jpg 1x, img/pretension/pretension-desktop@2x.jpg 2x"
+                                    width="570" height="360">
+                                <source type="image/jpg" media="(min-width: 768px)"
+                                    srcset="img/pretension/pretension-tablet.jpg 1x, img/pretension/pretension-tablet@2x.jpg 2x"
+                                    width="716" height="400">
+                                <img src="img/pretension/pretension-mobile.jpg"
+                                    srcset="img/pretension/pretension-mobile@2x.jpg 2x" width="296" height="180"
+                                    alt="Фото коттеджа.">
+                            </picture>
+                        </div>
+                        <div class="pretension-slider__image">
+                            <picture>
+                                <source type="image/jpg" media="(min-width: 1440px)"
+                                    srcset="img/pretension/pretension-desktop.jpg 1x, img/pretension/pretension-desktop@2x.jpg 2x"
+                                    width="570" height="360">
+                                <source type="image/jpg" media="(min-width: 768px)"
+                                    srcset="img/pretension/pretension-tablet.jpg 1x, img/pretension/pretension-tablet@2x.jpg 2x"
+                                    width="716" height="400">
+                                <img src="img/pretension/pretension-mobile.jpg"
+                                    srcset="img/pretension/pretension-mobile@2x.jpg 2x" width="296" height="180"
+                                    alt="Фото коттеджа.">
+                            </picture>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="advantages">
+            <div class="advantages__wrapper container">
+                <h2 class="advantages__title">5 причин выбрать дома от ООО 1D</h2>
+                <div class="advantages__content-wrapper">
+                    <ul class="advantages__list">
+                        <li class="advantages__item">Лаконичная архитектура в скандинавском стиле</li>
+                        <li class="advantages__item">Экологичные и безопасные материалы для&nbsp;сибирского климата</li>
+                        <li class="advantages__item">Функциональные планировки с удобным зонированием и правильной
+                            геометрией комнат</li>
+                        <li class="advantages__item">Панорамные окна, видовые комнаты и максимум естественного света в
+                            домах
+                        </li>
+                        <li class="advantages__item">Срок строительства – всего 60 дней</li>
+                    </ul>
+                    <picture>
+                        <source type="image/jpg" media="(min-width: 1440px)"
+                            srcset="img/advantages/advantages-desktop.jpg 1x, img/advantages/advantages-desktop@2x.jpg 2x"
+                            width="570" height="360">
+                        <source type="image/jpg" media="(min-width: 768px)"
+                            srcset="img/advantages/advantages-tablet.jpg 1x, img/advantages/advantages-tablet@2x.jpg 2x"
+                            width="716" height="400">
+                        <img src="img/advantages/advantages-mobile.jpg"
+                            srcset="img/advantages/advantages-mobile@2x.jpg 2x" width="296" height="180"
+                            alt="Фото коттеджа.">
+                    </picture>
+                </div>
+            </div>
+        </section>
+        <section class="map">
+            <div class="map__wrapper" id="map">
+                <h2 class="visually-hidden">Интерактивная карта.</h2>
+                <picture>
+                    <source type="image/jpg" media="(min-width: 1440px)"
+                        srcset="img/map/map-desktop.jpg 1x, img/map/map-desktop@2x.jpg 2x" width="1440" height="460">
+                    <source type="image/jpg" media="(min-width: 768px)"
+                        srcset="img/map/map-tablet.jpg 1x, img/map/map-tablet@2x.jpg 2x" width="768" height="500">
+                    <img class="map__image" src="img/map/map-mobile.jpg" srcset="img/map/map-mobile@2x.jpg 2x"
+                        width="320" height="351" alt="Карта.">
+                </picture>
+            </div>
+        </section>
+        <section class="feedback">
+            <div class="feedback__wrapper container">
+                <h2 class="visually-hidden">Форма обратной связи.</h2>
+                <p class="feedback__text">50 минут до м. Заельцовская</p>
+                <p class="feedback__title-form">Записывайтесь на экскурсию</p>
+                <form class="feedback__form" action="https://echo.htmlacademy.ru/" method="post">
+                    <label class="feedback__form-label">
+                        <input class="feedback__form-input" type="text" name="name" placeholder="Ваше имя" required>
+                    </label>
+                    <label class="feedback__form-label">
+                        <input class="feedback__form-input" type="tel" name="tel" placeholder="Телефон" required>
+                    </label>
+                    <button class="feedback__form-button" type="submit">Оставить заявку</button>
+                    <label class="feedback__form-label-consent">
+                        <input class="feedback__form-input-consent" type="checkbox" name="consent" required checked>
+                        <span class="feedback__form-input-text">Я соглашаюсь с
+                            <a class="feedback__form-input-link" href="#">правилами пользовательского соглашения</a>
+                        </span>
+                    </label>
+                </form>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="footer__wrapper container">
+            <a class="footer__link" href="#">Записаться на экскурсию</a>
+            <div class="footer__contacts-wrapper">
+                <a class="footer__contacts-tel" href="tel:+73833838022">8 (383) 383-80-22</a>
+                <a class="footer__contacts-consent" href="#">Правила пользовательского соглашения</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=357031fe-7dc3-4a81-af85-b303256621f8&lang=ru_RU"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/map.js"></script>
+    <script src="js/index.js"></script>
+</body>
+
+</html>

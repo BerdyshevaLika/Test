@@ -1,0 +1,49 @@
+@font-face {
+    font-style: normal;
+    font-weight: 700;
+    font-family: "TT Norms";
+
+    font-display: swap;
+    src: url("../../fonts/tt-norms/tt-norms-bold.woff2") format("woff2"),
+         url("../../fonts/tt-norms/tt-norms-bold.woff") format("woff");
+}
+
+@font-face {
+    font-style: normal;
+    font-weight: 400;
+    font-family: "Onest";
+
+    font-display: swap;
+    src: url("../../fonts/onest/onest-regular.woff2") format("woff2"),
+         url("../../fonts/onest/onest-regular.woff") format("woff");
+}
+
+@font-face {
+    font-style: normal;
+    font-weight: 500;
+    font-family: "Onest";
+
+    font-display: swap;
+    src: url("../../fonts/onest/onest-medium.woff2") format("woff2"),
+         url("../../fonts/onest/onest-medium.woff") format("woff");
+}
+
+@font-face {
+    font-style: normal;
+    font-weight: 500;
+    font-family: "Raleway";
+
+    font-display: swap;
+    src: url("../../fonts/raleway/raleway-medium.woff2") format("woff2"),
+         url("../../fonts/raleway/raleway-medium.woff") format("woff");
+}
+
+@font-face {
+    font-style: normal;
+    font-weight: 600;
+    font-family: "Raleway";
+
+    font-display: swap;
+    src: url("../../fonts/raleway/raleway-semi-bold.woff2") format("woff2"),
+         url("../../fonts/raleway/raleway-semi-bold.woff") format("woff");
+}

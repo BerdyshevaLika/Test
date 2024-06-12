@@ -1,0 +1,47 @@
+.catalog-slider {
+    position: relative;
+}
+
+.catalog-slider__mark {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    padding: 1px 10px;
+    color: $color-white;
+    background-color: $color-outrageous-orange;
+    border-radius: 30px;
+}
+
+.catalog-slider__content {
+    display: none;
+
+    &--active {
+        display: block;
+    }
+}
+
+.catalog-slider__pagination {
+    position: absolute;
+    left: 52%;
+    bottom: 12px;
+    display: flex;
+    gap: 8px;
+    transform: translateX(-51%);
+}
+
+.catalog-slider__pagination-button {
+    width: 8px;
+    height: 8px;
+    padding: 0;
+    background-color: $color-white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+
+    &--current {
+        width: 120px;
+    }
+}

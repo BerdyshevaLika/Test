@@ -1,0 +1,14 @@
+.container {
+    padding-left: 12px;
+    padding-right: 12px;
+
+    @media (min-width: $vp-768) {
+        padding-left: 26px;
+        padding-right: 26px;
+    }
+
+    @media (min-width: $vp-1440) {
+        padding-left: 120px;
+        padding-right: 120px;
+    }
+}
